@@ -57,7 +57,72 @@
 }
 .weather-container .weather-header-enter-city-name .enter-city-div .fa-magnifying-glass {
   color: #858585;
+  height: 23px;
+  width: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .weather-container .weather-header-enter-city-name .fa-bars {
   color: #7284ff;
+}
+.weather-container .weather-description {
+  margin: 0px 30px;
+}
+.weather-container .weather-description-back-img {
+  height: 380px;
+  background-image: url(../images/weather-image.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.weather-container .weather-description-back-img .weather-data {
+  height: 100%;
+  padding: 15px;
+  display: flex;
+}
+.weather-container .weather-description-back-img .weather-data .weather-current-data {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  color: #fff;
+  text-shadow: 0px 0px 15px #000;
+}
+.weather-container .weather-description-back-img .weather-data .weather-current-data .fa-sun {
+  font-size: 35px;
+  color: #fff;
+}
+.weather-container .weather-description-back-img .weather-data .weather-current-data .current-temperature {
+  font-size: 60px;
+  line-height: 80px;
+}
+.weather-container .weather-description-back-img .weather-data .weather-current-data .current-main {
+  font-weight: 600;
+  font-size: 20px;
+}
+.weather-container .weather-description-back-img .weather-data .weather-sunrise-sunset-time {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  color: #fff;
+  text-shadow: 0px 0px 15px #000;
+}
+.weather-container .weather-description-back-img .weather-data .weather-sunrise-sunset-time .sunrise-time {
+  font-weight: 600;
+  font-size: 20px;
+}
+.weather-container .weather-description-back-img .weather-data .weather-sunrise-sunset-time .location {
+  font-weight: 600;
+  font-size: 20px;
+}
+.weather-container .weather-description-back-img .weather-data .weather-sunrise-sunset-time .sunset-time {
+  font-weight: 600;
+  font-size: 20px;
 }/*# sourceMappingURL=weather.css.map */
