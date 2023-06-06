@@ -15,8 +15,6 @@ const getCurrentData = (city) => {
             document.querySelector(".weather-max-temp span").innerText = Math.ceil(response.main.temp_max);
             document.querySelector(".weather-humidity span").innerText = Math.ceil(response.main.humidity) + "%";
             document.querySelector(".wind-speed span").innerText = Math.ceil(response.wind.speed) + " km/h";
-
-
         })
 }
 searchCity.addEventListener("click", () => {
