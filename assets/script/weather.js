@@ -14,6 +14,11 @@ const getCurrentData = (city) => {
             document.querySelector(".current-main").innerText = response.weather[0].main;
             document.querySelector(".sunrise-time").innerText = "Sunrise: " + sunrise.toLocaleTimeString();
             document.querySelector(".sunset-time").innerText = "Sunset: " + sunset.toLocaleTimeString();
+            document.querySelector(".location").innerText = "Location: " + response.name;
+            document.querySelector(".weather-min-temp span").innerText = Math.ceil(response.main.temp_min);
+            document.querySelector(".weather-max-temp span").innerText = Math.ceil(response.main.temp_max);
+            document.querySelector(".weather-humidity span").innerText = Math.ceil(response.main.humidity) + "%";
+            document.querySelector(".wind-speed span").innerText = Math.ceil(response.wind.speed) + " km/h";
 
 
         })
