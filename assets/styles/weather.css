@@ -10,11 +10,9 @@
   height: 100%;
 }
 .weather-container .weather {
-  max-width: 1130px;
   width: 100%;
-  height: 690px;
+  height: 700px;
   border-radius: 14px;
-  margin: 20px auto;
   background-color: #ebf6fc;
 }
 .weather-container .weather-header {
