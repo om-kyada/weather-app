@@ -7,13 +7,16 @@
 
 .weather-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-image: url(https://www.koin.com/wp-content/uploads/sites/10/2023/01/Rain-and-blue-sky.png?w=1146&h=641&crop=1);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 .weather-container .weather {
   width: 100%;
-  height: 700px;
+  height: 100%;
   border-radius: 14px;
-  background-color: #ebf6fc;
 }
 .weather-container .weather-header {
   display: flex;
@@ -68,11 +71,7 @@
   margin: 0px 30px;
 }
 .weather-container .weather-description-back-img {
-  height: 380px;
-  background-image: url(../images/weather-image.jpeg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+  height: 300px;
   border-radius: 15px;
 }
 .weather-container .weather-description-back-img .weather-data {
@@ -127,7 +126,8 @@
   margin: 30px;
   height: 200px;
   border-radius: 13px;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.431372549);
+  color: #fff;
   padding: 15px;
 }
 .weather-container .weather-data-humanity .weather-min-max-temp {
@@ -145,7 +145,7 @@
 .weather-container .weather-data-humanity .weather-min-max-temp .weather-min-temp .fa-temperature-low {
   padding: 0px 10px;
   font-size: 40px;
-  color: #7284ff;
+  color: #847f7f;
 }
 .weather-container .weather-data-humanity .weather-min-max-temp .weather-min-temp span {
   font-weight: bold;
@@ -161,7 +161,7 @@
 .weather-container .weather-data-humanity .weather-min-max-temp .weather-max-temp .fa-temperature-high {
   padding: 0px 10px;
   font-size: 40px;
-  color: #7284ff;
+  color: #fff;
 }
 .weather-container .weather-data-humanity .weather-min-max-temp .weather-max-temp span {
   font-weight: bold;
@@ -181,7 +181,7 @@
 .weather-container .weather-data-humanity .humidity-wind-speed .weather-humidity .fa-droplet {
   padding: 0px 10px;
   font-size: 40px;
-  color: #7284ff;
+  color: #847f7f;
 }
 .weather-container .weather-data-humanity .humidity-wind-speed .weather-humidity span {
   font-weight: bold;
@@ -197,7 +197,7 @@
 .weather-container .weather-data-humanity .humidity-wind-speed .wind-speed .fa-wind {
   padding: 0px 10px;
   font-size: 40px;
-  color: #7284ff;
+  color: #847f7f;
 }
 .weather-container .weather-data-humanity .humidity-wind-speed .wind-speed span {
   font-weight: bold;
