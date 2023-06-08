@@ -17,6 +17,8 @@
 
 <body>
     <div class="weather-container">
+        <!-- <div class="weather-background-images"></div> -->
+        <!-- <img class="weather-background-images" src="./assets/images/E3K8.gif" alt=""> -->
         <div class="weather">
             <div class="weather-header">
                 <div class="weather-header-current-title">Weather
@@ -34,7 +36,7 @@
                     <div class="weather-data">
                         <div class="weather-current-data">
                             <!-- <i class="fa-solid fa-sun"></i> -->
-                            <img class="icon" src="https://openweathermap.org/img/wn/50d@2x.png" alt="sun">
+                            <img class="icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="sun">
                             <p class="current-temperature">24°C</p>
                             <p class="current-main">Clear sky</p>
                         </div>
@@ -48,16 +50,16 @@
             </div>
             <div class="weather-data-humanity">
                 <div class="weather-min-max-temp">
-                    <div class="weather-min-temp"><img src="./assets/images/pressure.png">
+                    <div class="weather-min-temp"><img class="pressure-icon" src="./assets/images/pressure.png">
                         <div>
-                            <p>Pressure</p>
+                            <p>Pressure: </p>
                             <span>1001mb</span>
                         </div>
                     </div>
 
-                    <div class="weather-max-temp"><i class="fa-solid fa-temperature-high"></i>
+                    <div class="weather-max-temp"><i class="fa-solid fa-cloud"></i>
                         <div>
-                            <p>Maximum Temperature</p>
+                            <p>Visibility</p>
                             <span>40</span>
                         </div>
                     </div>
@@ -68,7 +70,7 @@
                             <p>Humidity: </p><span>64%</span>
                         </div>
                     </div>
-                    <div class="wind-speed"><i class="fa-solid fa-wind"></i>
+                    <div class="wind-speed"><i class="fa-solid fa-wind temp-icon"></i>
                         <div>
                             <p>Wind Speed: </p><span>7 km/h</span>
                         </div>
