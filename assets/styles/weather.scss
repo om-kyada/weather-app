@@ -126,6 +126,7 @@
                         justify-content: end;
                         align-items: end;
                         color: #fff;
+                        letter-spacing: 1px;
 
                         .sunrise-time {
                             font-weight: 600;
@@ -153,7 +154,7 @@
             background: #0000006e;
             color: #fff;
             backdrop-filter: blur(4px);
-
+            letter-spacing: 1px;
             padding: 15px;
 
             .weather-min-max-temp {

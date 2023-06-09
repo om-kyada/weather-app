@@ -82,9 +82,68 @@
                     </div>
                 </div>
             </div>
+            <div class="weather-chart">
+                <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+            </div>
         </div>
     </div>
     <script src="./assets/script/weather.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script>
+        var array = []
+
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?q=surat&appid=e02a9a7f8d52c66794a09c113a6baca5&units=metric`)
+            .then((response) => response.json())
+            .then((response) => {
+                console.log(response, "00000000000")
+                const dateTime = response.list;
+                // console.log(dateTime)
+                Object.values(dateTime).forEach((dateList) => {
+                    console.log(dateList.dt_txt)
+                    array.push(dateList.dt_txt)
+                    console.log(array, "======================")
+                });
+            })
+        var xyValues = [//array
+            { x: new Date(dateList.dt), y: 7 },
+            { x: new Date(2012, 01, 1), y: 8 },
+            { x: new Date(2012, 01, 1), y: 8 },
+            { x: new Date(2012, 01, 1), y: 9 },
+            { x: new Date(2012, 01, 1), y: 9 },
+            { x: new Date(2012, 01, 1), y: 9 },
+            { x: new Date(2012, 01, 1), y: 10 },
+            { x: new Date(2012, 01, 1), y: 11 },
+            { x: new Date(2012, 01, 1), y: 14 },
+            { x: new Date(2012, 01, 1), y: 14 },
+            { x: new Date(2012, 01, 1), y: 15 }
+        ];
+
+        new Chart("myChart",
+            {
+                type: "scatter",
+                data: {
+                    datasets: [{
+                        pointRadius: 4,
+                        pointBackgroundColor: "rgb(0,0,255)",
+                        data: xyValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    scales: {
+                        xAxes: {
+                            title: "timeline",
+                            gridThickness: 10
+                        },
+                        yAxes: { title: "om" },
+                    }
+                }
+            });
+
+
+
+    </script>
+
 </body>
 
 </html>
