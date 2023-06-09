@@ -13,6 +13,9 @@ const getCurrentData = (city) => {
                 if (weather === "Clouds") {
                     document.querySelector(".weather-container").style.cssText = ` background : url(../assets/images/cloud.jpg);    background-repeat: no-repeat;
                     background-size: cover;`;
+                    // var clear = new Audio('../assets/audio/natural-thunder.mp3');
+                    // clear.loop = true;
+                    // clear.play();
                 } else if (weather === "Clear") {
                     document.querySelector(".weather-container").style.cssText = `background:url('../assets/images/clear.jpg');    background-repeat: no-repeat;
                     background-size: cover;`
@@ -58,3 +61,8 @@ enterCity.addEventListener("keypress", (event) => {
     }
     return false;
 });
+
+// var clear = new Audio('../assets/audio/clear.mp3');
+// clear.loop = true;
+// clear.play();
+// console.log(clear)
