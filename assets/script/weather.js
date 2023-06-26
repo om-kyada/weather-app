@@ -1,5 +1,6 @@
 let enterCity = document.getElementById("enter-city");
 let searchCity = document.getElementById("search-city");
+
 const getCurrentData = (city) => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`)
         .then((response) => response.json())
