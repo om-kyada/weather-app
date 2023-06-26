@@ -91,7 +91,7 @@
     <script>
 
         var array = [];
-        fetch(`https://api.openweathermap.org/data/2.5/forecast?q=surat&appid=e02a9a7f8d52c66794a09c113a6baca5&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?q=surat&units=metric`)
             .then((response) => response.json())
             .then((response) => {
                 console.log(response, "00000000000")
